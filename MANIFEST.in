@@ -1,5 +1,6 @@
 include README.md
 include LICENSE
+include NOTICE
 include config.example.toml
 recursive-include examples *.csv *.jsonl
 recursive-exclude data *

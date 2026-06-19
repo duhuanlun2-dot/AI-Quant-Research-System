@@ -1,5 +1,7 @@
 # AI Quant Research System
 
+Copyright (c) 2026 HuanlunDu. Released under the MIT License.
+
 Research-grade AI quant pipeline for local experimentation with market data ingestion, news scoring, factor construction, chronological OOS modeling, portfolio backtesting, execution-aware simulation, and trust-audit reports.
 
 > Research only. This project is not financial advice, not an investment recommendation, and not a production trading system. Backtest and model outputs can be wrong, biased, stale, or non-reproducible if the underlying data is incomplete.
