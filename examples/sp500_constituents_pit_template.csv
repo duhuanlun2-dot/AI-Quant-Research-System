@@ -1,0 +1,4 @@
+date,ticker,company,entry_date,exit_date,gics_sector,gics_industry,source
+2026-06-18,AAPL,Apple Inc.,1982-11-30,,Information Technology,Technology Hardware,pit_vendor
+2026-06-18,MSFT,Microsoft Corporation,1994-06-01,,Information Technology,Software,pit_vendor
+2026-06-18,ABC,Example Removed Company,2000-01-03,2010-12-31,Health Care,Pharmaceuticals,pit_vendor

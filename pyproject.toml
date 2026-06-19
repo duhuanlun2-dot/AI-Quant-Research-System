@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-quant-research-system"
+version = "0.1.0"
+description = "Research-grade AI quant pipeline with data ingestion, news scoring, factors, OOS modeling, and portfolio backtesting."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "AI Quant Research System Contributors" },
+]
+keywords = ["quant", "research", "backtesting", "machine-learning", "finance", "duckdb"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "duckdb>=1.0.0",
+  "pandas>=2.2.0",
+  "tzdata>=2024.1",
+  "yfinance>=0.2.50",
+  "lxml>=5.0.0",
+  "scikit-learn>=1.4.0",
+  "joblib>=1.3.0",
+  "pyarrow>=15.0.0",
+  "matplotlib>=3.8.0",
+]
+
+[project.optional-dependencies]
+advanced-models = [
+  "lightgbm>=4.0.0",
+  "xgboost>=2.0.0",
+]
+dev = [
+  "build>=1.2.0",
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+]
+
+[project.scripts]
+aiqrs = "ai_quant_research_system.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

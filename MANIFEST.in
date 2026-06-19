@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include config.example.toml
+recursive-include examples *.csv *.jsonl
+recursive-exclude data *
+recursive-exclude models *
+recursive-exclude outputs *
+exclude config.toml

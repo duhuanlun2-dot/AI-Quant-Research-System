@@ -1,0 +1,37 @@
+﻿[database]
+path = "data/ai_quant.duckdb"
+parquet_backup_dir = "data/parquet"
+
+[calendar]
+timezone = "America/New_York"
+
+[sources]
+universe_primary = "sharadar"
+market_primary = "yfinance"
+market_fallback = "yfinance"
+benchmark_primary = "fred"
+news_primary = "yfinance"
+sec_user_agent = "AI Quant Research System contact@example.com"
+
+[api_keys]
+polygon = ""
+fred = ""
+benzinga = ""
+
+[ingestion]
+price_run_time_et = "17:00"
+news_interval_minutes = 15
+suspicious_return_threshold = 0.50
+
+[llm]
+provider = "heuristic"
+model = "local-heuristic-v1"
+prompt_version = "news_score_v1"
+api_key = ""
+api_key_env = "OPENAI_API_KEY"
+base_url = "https://api.openai.com/v1"
+concurrency = 5
+rate_limit_per_minute = 3000
+max_retries = 3
+timeout_seconds = 30
+
